@@ -164,7 +164,7 @@ class Player {
             document.getElementById("autoupgrades-toggle").innerText = this.AutoUpgrade.unlocked ? (this.AutoUpgrade.activated?("启用\n当前间隔: "+this.AutoUpgrade.interval+"ms"):"禁用") :"达到 1e15 点数以解锁"
             document.getElementById("autoascension-toggle").innerText = this.AutoAscension.unlocked ? (this.AutoAscension.activated?("启用\n当前间隔: "+this.AutoAscension.interval+"ms"):"禁用") :"达到 1e30 点数以解锁"
             document.getElementById("autozero-toggle").innerText = this.AutoAscension_Zero.unlocked ? (this.AutoAscension_Zero.activated?("启用\n当前间隔: "+this.AutoAscension_Zero.interval+"ms"):"禁用") :"达到 1e45 点数以解锁"
-            document.getElementById("automore-toggle").innerText = this.AutoAscension_More.unlocked ? (this.AutoAscension_More.activated?("启用\n当前间隔: "+this.AutoAscension_More.interval+"ms\n触发阈值: "+this.AutoAscension_More.multi+"x"):"Disabled") :"达到 1e70 点数以解锁"
+            document.getElementById("automore-toggle").innerText = this.AutoAscension_More.unlocked ? (this.AutoAscension_More.activated?("启用\n当前间隔: "+this.AutoAscension_More.interval+"ms\n触发阈值: "+this.AutoAscension_More.multi+"x"):"禁用") :"达到 1e70 点数以解锁"
         }
         else{
             document.getElementById("animations-toggle").innerText = this.animations ? "Enabled" : "Disabled";
